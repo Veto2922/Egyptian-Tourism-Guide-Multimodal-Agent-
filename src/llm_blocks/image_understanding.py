@@ -1,7 +1,7 @@
 from google import genai
 from google.genai import types
 
-class ImageCaptioner:
+class ImageUnderstanding:
     """
     A class to handle image-to-text generation using the Google Generative AI API.
     """
@@ -14,7 +14,7 @@ class ImageCaptioner:
         """
         self.client = genai.Client(api_key=api_key)
 
-    def generate_caption(self, file_path: str, prompt: str) -> str:
+    def understand_image(self, file_path: str, prompt: str) -> str:
         """
         Generates a text caption for an image.
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # Example Usage (requires a dummy 'output.png' file for testing)
     # Create a dummy file for testing purposes if it doesn't exist
     try:
-        with open("output.png", "x") as f:
+        with open(r"D:\GAN_AI\projects\Egyptian-Tourism-Guide-Multimodal-Agent-\src\llm_blocks\generated_images\20250608_160905_cat_and_dog_.png", "x") as f:
             pass
     except FileExistsError:
         pass
@@ -53,9 +53,9 @@ if __name__ == '__main__':
     api_key = os.getenv('GEMINI_API_KEY')
     
     if api_key:
-        captioner = ImageCaptioner(api_key)
+        understanding = ImageUnderstanding(api_key)
         # Ensure 'output.png' exists for this example to work
-        caption = captioner.generate_caption("output.png", "describe this image.")
+        caption = understanding.understand_image(r"D:\GAN_AI\projects\Egyptian-Tourism-Guide-Multimodal-Agent-\src\llm_blocks\generated_images\20250608_160905_cat_and_dog_.png", "describe this image.")
         print(caption)
     else:
         print("GEMINI_API_KEY not found. Please set it in your .env file.") 

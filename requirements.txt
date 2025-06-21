@@ -1,0 +1,9 @@
+google-genai
+gradio>=4.31.5
+Pillow>=10.3.0
+python-dotenv>=1.0.1
+requests>=2.31.0
+simpleaudio>=1.0.4
+together>=1.1.2
+ipython>=8.25.0
+gtts 
