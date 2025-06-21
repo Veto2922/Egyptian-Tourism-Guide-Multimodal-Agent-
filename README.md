@@ -2,6 +2,9 @@
 
 A sophisticated multimodal AI assistant designed to help tourists explore the wonders of Egypt through a rich, interactive interface. This agent leverages cutting-edge generative AI to understand text, voice, and images, providing comprehensive guidance on attractions, cuisine, transportation, and more.
 
+![image](https://github.com/user-attachments/assets/245e9b88-0964-403a-8383-e97e8e03a5e9)
+
+
 ## ✨ Features
 
 - **🗣️ Multimodal Chat**: Interact with the agent via text, voice (speech-to-text), or by uploading images for analysis.
